@@ -25,9 +25,13 @@ The original source code was cloned from https://github.com/apache/asterixdb
         mvn clean package -DskipTests -Drat.numUnapprovedLicenses=200 -e -Dcheckstyle.skip
 
 ## LSM RUM-tree source code locations
+
 * LSM RUM-tree implementation:
+
         hyracks-fullstack/hyracks/hyracks-storage-am-lsm-rtree/src/main/java/org/apache/hyracks/storage/am/lsm/rtree/impls/LSMRTree.java 
+
 * Experiment:
+
         hyracks-fullstack/hyracks/hyracks-tests/hyracks-storage-am-lsm-rtree-test/src/test/java/org/apache/hyracks/UMTest.java
 
 ## Experiment and Evaluation
