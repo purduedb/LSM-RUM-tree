@@ -39,9 +39,9 @@ The original source code was cloned from https://github.com/apache/asterixdb
 
         java -cp /path/to/asterixdb/hyracks-fullstack/hyracks/hyracks-tests/hyracks-storage-am-lsm-rtree-test/target/test-classes/:/path/to/asterixdb_um/asterixdb/hyracks-fullstack/hyracks/hyracks-tests/hyracks-storage-am-lsm-rtree-test/target/dependency/*  org.apache.hyracks.storage.am.lsm.rtree.UMTest
 
-## Comppetitors and baseline Experiment
+## Competitors and baseline Experiment
 
-        https://github.com/Jiboxiake/LSM-R-tree-competitor-experiment
+The codebase of the competitor experiment can be found at https://github.com/Jiboxiake/LSM-R-tree-competitor-experiment
 
 <a href="http://asterixdb.apache.org"><img src="http://asterixdb.apache.org/img/asterixdb_tm.png" height=100></img></a>
 
