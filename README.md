@@ -22,6 +22,7 @@ This codebase includes the implementation of LSM RUM-tree from the VLDBJ paper: 
 The original source code was cloned from https://github.com/apache/asterixdb
 
 ## Compilation
+
         mvn clean package -DskipTests -Drat.numUnapprovedLicenses=200 -e -Dcheckstyle.skip
 
 ## LSM RUM-tree source code locations
@@ -35,8 +36,12 @@ The original source code was cloned from https://github.com/apache/asterixdb
         hyracks-fullstack/hyracks/hyracks-tests/hyracks-storage-am-lsm-rtree-test/src/test/java/org/apache/hyracks/UMTest.java
 
 ## Experiment and Evaluation
+
         java -cp /path/to/asterixdb/hyracks-fullstack/hyracks/hyracks-tests/hyracks-storage-am-lsm-rtree-test/target/test-classes/:/path/to/asterixdb_um/asterixdb/hyracks-fullstack/hyracks/hyracks-tests/hyracks-storage-am-lsm-rtree-test/target/dependency/*  org.apache.hyracks.storage.am.lsm.rtree.UMTest
 
+## Comppetitors and baseline Experiment
+
+        https://github.com/Jiboxiake/LSM-R-tree-competitor-experiment
 
 <a href="http://asterixdb.apache.org"><img src="http://asterixdb.apache.org/img/asterixdb_tm.png" height=100></img></a>
 
