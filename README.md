@@ -22,14 +22,14 @@ This codebase includes the implementation of LSM RUM-tree from the VLDBJ paper: 
 The original source code was cloned from https://github.com/apache/asterixdb
 
 ## Compilation
-execute $mvn clean package -DskipTests -Drat.numUnapprovedLicenses=200 -e -Dcheckstyle.skip
+        mvn clean package -DskipTests -Drat.numUnapprovedLicenses=200 -e -Dcheckstyle.skip
 
 ## LSM RUM-tree source code locations
-$hyracks-fullstack/hyracks/hyracks-storage-am-lsm-rtree/src/main/java/org/apache/hyracks/storage/am/lsm/rtree/impls/LSMRTree.java 
-$hyracks-fullstack/hyracks/hyracks-tests/hyracks-storage-am-lsm-rtree-test/src/test/java/org/apache/hyracks/UMTest.java
+        hyracks-fullstack/hyracks/hyracks-storage-am-lsm-rtree/src/main/java/org/apache/hyracks/storage/am/lsm/rtree/impls/LSMRTree.java 
+        hyracks-fullstack/hyracks/hyracks-tests/hyracks-storage-am-lsm-rtree-test/src/test/java/org/apache/hyracks/UMTest.java
 
 ## Experiment and Evaluation
-execute $java -cp /path/to/asterixdb/hyracks-fullstack/hyracks/hyracks-tests/hyracks-storage-am-lsm-rtree-test/target/test-classes/:/path/to/asterixdb_um/asterixdb/hyracks-fullstack/hyracks/hyracks-tests/hyracks-storage-am-lsm-rtree-test/target/dependency/*  org.apache.hyracks.storage.am.lsm.rtree.UMTest
+        java -cp /path/to/asterixdb/hyracks-fullstack/hyracks/hyracks-tests/hyracks-storage-am-lsm-rtree-test/target/test-classes/:/path/to/asterixdb_um/asterixdb/hyracks-fullstack/hyracks/hyracks-tests/hyracks-storage-am-lsm-rtree-test/target/dependency/*  org.apache.hyracks.storage.am.lsm.rtree.UMTest
 
 
 <a href="http://asterixdb.apache.org"><img src="http://asterixdb.apache.org/img/asterixdb_tm.png" height=100></img></a>
