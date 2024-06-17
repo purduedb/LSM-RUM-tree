@@ -288,28 +288,28 @@ public class UMTest {
         numQueries.add(numQuery);
         //Libin: point queries
         //query region
-/*
+        /*
         searchStart = 0L;
         searchEnd = 0L;
         searchTime = 0L;
-
+        
         boundaries = this.dataBoundary.split(",");
         minX = Double.valueOf(boundaries[0]);
         maxX = Double.valueOf(boundaries[1]);
         minY = Double.valueOf(boundaries[2]);
         maxY = Double.valueOf(boundaries[3]);
-
+        
         ArrayList<Double[]> searchPoints = new ArrayList<Double[]>();
         String[] points = this.queryPoints.split("/");
         for (int j = 0; j < points.length; j++) {
             String[] tmp = points[j].split(",");
             searchPoints.add(new Double[] { Double.valueOf(tmp[0]), Double.valueOf(tmp[1]) });
         }
-
+        
         searchTimes = new ArrayList<Long>();
         keyTb = new ArrayTupleBuilder(rtreeKeyFieldCount);
         key = new ArrayTupleReference();
-
+        
         int multiplier = 8;
         for (int j = 1; j < multiplier; j++) {
             searchTime = 0L;
@@ -320,11 +320,11 @@ public class UMTest {
                 double yy = searchPoints.get(k)[1];
                 double sizeX = ((maxX - minX) * j * j * j * 0.001) / 2.0;
                 double sizeY = ((maxY - minY) * j * j * j * 0.001) / 2.0;
-
+        
                 LOGGER.error((xx - sizeX) + ", " + (yy - sizeY) + " to " + (xx + sizeX) + ", " + (yy + sizeY));
                 TupleUtils.createDoubleTuple(keyTb, key, xx - sizeX, yy - sizeY, xx + sizeX, yy + sizeY);
                 //tuple = (ArrayTupleReference) TupleUtils.createTuple(fieldSerdes, xx - sizeX, yy - sizeY, xx + sizeX, yy + sizeY);
-
+        
                 searchStart = System.nanoTime();
                 LOGGER.error("k: " + k);
                 rangeSearch(rTreeCmpFactories, rIndexAccessor, rFieldSerdes, key, null, null);
@@ -332,11 +332,11 @@ public class UMTest {
                 searchTime += searchEnd - searchStart;
                 LOGGER.error(searchTime);
             }
-
+        
             searchTimes.add(searchTime / searchPoints.size());
         }
-
- */
+        
+         */
         //query region
         LOGGER.error("-------------------------------------------------------------------");
         String lines = "";
